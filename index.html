@@ -347,32 +347,300 @@ functionality and elegant design.
 </section>
 
 
+
+<style>
+  /* AMR Qazi Furniture - About Section */
+  #about {
+    position: relative;
+    padding: 90px 7%;
+    background: #101010;
+    color: #f5f1e8;
+    overflow: hidden;
+  }
+
+  #about .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 65px;
+  }
+
+  #about .about-photo {
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #about .about-photo::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid #c6a15b;
+    z-index: 0;
+  }
+
+  #about .about-photo img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  }
+
+  #about .about-content {
+    max-width: 650px;
+  }
+
+  #about .about-eyebrow {
+    color: #c6a15b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  #about h2 {
+    color: #f7f2e8;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.2;
+    margin: 0 0 22px;
+    font-weight: 600;
+  }
+
+  #about h2 span {
+    color: #c6a15b;
+  }
+
+  #about .about-intro {
+    color: #e0d9cc;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+  }
+
+  #about .about-description {
+    color: #bdb7ac;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+  }
+
+  #about .owner-name {
+    color: #d7b56f;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0 0 7px;
+  }
+
+  #about .owner-title {
+    color: #c7c0b5;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  #about .about-divider {
+    width: 75px;
+    height: 2px;
+    background: #c6a15b;
+    margin: 25px 0;
+  }
+
+  #about .about-features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px 25px;
+    margin: 25px 0 32px;
+  }
+
+  #about .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: #e6dfd2;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #about .feature-icon {
+    color: #c6a15b;
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  #about .about-button {
+    display: inline-block;
+    padding: 14px 27px;
+    background: #c6a15b;
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid #c6a15b;
+    transition: all 0.3s ease;
+  }
+
+  #about .about-button:hover {
+    background: transparent;
+    color: #d7b56f;
+  }
+
+  #about .since-label {
+    display: inline-block;
+    margin-top: 25px;
+    color: #c6a15b;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: 800px) {
+    #about {
+      padding: 65px 6%;
+    }
+
+    #about .about-container {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    #about .about-photo {
+      max-width: 380px;
+    }
+
+    #about .about-content {
+      max-width: 100%;
+    }
+
+    #about h2 {
+      font-size: 34px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #about .about-features {
+      grid-template-columns: 1fr;
+      gap: 13px;
+    }
+
+    #about .about-intro {
+      font-size: 15px;
+    }
+  }
+</style>
+
 <section id="about">
+  <div class="about-container">
 
-<div class="container">
+    <div class="about-photo">
+      <img src="owner.jpg"
+           alt="Qazi M. Ashraf, Owner of AMR.Qazi Furniture">
+    </div>
 
-<h2 class="section-title">About AMR.Qazi Furniture</h2>
+    <div class="about-content">
 
-<div class="about-text">
+      <div class="about-eyebrow">Our Story & Craftsmanship</div>
 
-<p>
-AMR.Qazi Furniture is based in Liaquatabad, Karachi, Pakistan.
-Owned by <strong>Qazi M. Ashraf</strong>, the business provides
-custom furniture and interior solutions for residential and commercial spaces.
-</p>
+      <h2>
+        About <span>AMR.Qazi</span> Furniture
+      </h2>
 
-<br>
+      <p class="about-intro">
+        Built on craftsmanship, shaped by experience, and
+        inspired by timeless design.
+      </p>
 
-<p>
-Our services include custom furniture, interior designing, kitchens,
-office furniture, bedroom sets, bridal furniture and bungalow interiors.
-</p>
+      <p class="about-description">
+        Since 1975, AMR.Qazi Furniture has been dedicated to
+        creating furniture that brings comfort, functionality,
+        and elegance into every space. What began with
+        traditional carpentry has grown into a furniture
+        business built on years of hands-on experience,
+        creative design, and a commitment to quality.
+      </p>
 
-</div>
+      <div class="about-divider"></div>
 
-</div>
+      <h3 class="owner-name">Qazi M. Ashraf</h3>
 
+      <p class="owner-title">
+        Owner | Master Carpenter | Furniture Designer & Creator
+      </p>
+
+      <p class="about-description">
+        With over five decades of experience in furniture
+        craftsmanship, Qazi M. Ashraf brings together
+        traditional woodworking skills and modern design
+        concepts. His work reflects attention to detail,
+        thoughtful designs, durable construction, and
+        beautiful finishing.
+      </p>
+
+      <div class="about-features">
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Custom Furniture Designs</span>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Bedroom & Bridal Furniture</span>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Kitchen & Office Furniture</span>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Interior Design & Furnishing</span>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Bungalow & Home Interiors</span>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">✦</span>
+          <span>Made-to-Order Furniture</span>
+        </div>
+      </div>
+
+      <p class="about-description">
+        Every project is approached with care, from the
+        initial idea to the final finish. Our aim is to
+        create furniture that suits our customers' spaces,
+        needs, and personal style.
+      </p>
+
+      <a class="about-button"
+         href="https://wa.me/92321925746"
+         target="_blank"
+         rel="noopener noreferrer">
+        CONTACT US
+      </a>
+
+      <div class="since-label">
+        CRAFTING FURNITURE SINCE 1975
+      </div>
+
+    </div>
+  </div>
 </section>
+
 
 
 <section id="contact" class="contact">
