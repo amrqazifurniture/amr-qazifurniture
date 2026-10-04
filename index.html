@@ -6,721 +6,2277 @@
 
 <title>AMR.Qazi Furniture | Custom Furniture & Interior Design Karachi</title>
 
-<meta name="description" content="AMR.Qazi Furniture Karachi — custom furniture, bedroom sets, kitchens, office furniture, bridal furniture and complete interior solutions made to order.">
+<meta name="description" content="AMR.Qazi Furniture Karachi — Custom furniture, bedroom sets, kitchens, office furniture, bridal furniture, bungalow interiors and made-to-order furniture. Established in 1975.">
+<meta name="keywords" content="AMR Qazi Furniture, furniture Karachi, custom furniture Karachi, bedroom furniture, kitchen furniture, office furniture, bridal furniture, bungalow interiors">
+<meta name="author" content="AMR.Qazi Furniture">
+
+<meta property="og:title" content="AMR.Qazi Furniture">
+<meta property="og:description" content="Custom Furniture & Interior Design — Karachi">
+<meta property="og:type" content="website">
 
 <style>
+
+:root{
+    --black:#080808;
+    --black2:#111111;
+    --gold:#d4af37;
+    --gold-light:#f0d77b;
+    --cream:#f7f3ea;
+    --white:#ffffff;
+    --gray:#b9b9b9;
+    --dark-gray:#1b1b1b;
+    --border:rgba(212,175,55,.28);
+    --shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#0b0b0b;
-    color:#f5f1e8;
-    line-height:1.6;
+html{
+    scroll-padding-top:85px;
 }
 
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-    background:rgba(0,0,0,0.94);
-    border-bottom:1px solid #b99a5b;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.6;
+    overflow-x:hidden;
 }
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* =========================
+   TOP MOVING STRIP
+========================= */
+
+.top-strip{
+    height:38px;
+    background:var(--gold);
+    color:#080808;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.ticker{
+    display:inline-block;
+    padding-left:100%;
+    animation:tickerMove 28s linear infinite;
+}
+
+.ticker span{
+    margin-right:70px;
+}
+
+@keyframes tickerMove{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
-    max-width:1200px;
+    position:sticky;
+    top:0;
+    z-index:999;
+    height:78px;
+    background:rgba(8,8,8,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+.nav-container{
+    width:min(1200px,92%);
+    height:100%;
     margin:auto;
-    padding:18px 25px;
     display:flex;
+    align-items:center;
     justify-content:space-between;
-    align-items:center;
+    gap:25px;
 }
 
-.logo{
-    color:#d4af63;
-    font-size:24px;
-    font-weight:bold;
-    letter-spacing:1px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:22px;
-    font-size:14px;
-}
-
-nav a:hover{
-    color:#d4af63;
-}
-
-.hero{
-    min-height:100vh;
-    padding:150px 25px 80px;
+.logo-area{
     display:flex;
     align-items:center;
-    text-align:center;
-    justify-content:center;
-    background:
-    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.78)),
-    url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=80")
-    center/cover;
+    gap:12px;
+    min-width:0;
 }
 
-.hero-content{
-    max-width:850px;
+.logo-area img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    border-radius:50%;
 }
 
-.hero h1{
-    font-size:55px;
-    color:#d4af63;
-    margin-bottom:15px;
+.logo-text{
+    line-height:1.1;
 }
 
-.hero h2{
-    font-size:25px;
-    margin-bottom:20px;
+.logo-text strong{
+    display:block;
+    color:var(--gold);
+    font-size:17px;
+    letter-spacing:.8px;
 }
 
-.hero p{
-    font-size:18px;
+.logo-text small{
     color:#ddd;
-    margin-bottom:30px;
+    font-size:10px;
+    letter-spacing:1.4px;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:6px;
-    background:#d4af63;
-    color:#111;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:3px;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
 }
 
-.btn:hover{
-    background:#fff;
+.nav-links a{
+    font-size:13px;
+    color:#eee;
+    transition:.3s;
+    position:relative;
 }
 
-section{
-    padding:85px 25px;
+.nav-links a:hover{
+    color:var(--gold-light);
 }
 
-.container{
-    max-width:1150px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    color:#d4af63;
-    font-size:35px;
-    margin-bottom:45px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.card{
-    background:#151515;
-    border:1px solid #3a3020;
-    padding:30px;
-    text-align:center;
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:1px;
+    background:var(--gold);
+    bottom:-6px;
+    left:0;
     transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#d4af63;
+.nav-links a:hover::after{
+    width:100%;
 }
 
-.card h3{
-    color:#d4af63;
+.nav-cta{
+    background:var(--gold);
+    color:#080808 !important;
+    padding:10px 15px;
+    border-radius:4px;
+    font-weight:700;
+}
+
+.nav-cta:hover{
+    background:var(--gold-light);
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:1px solid var(--border);
+    color:var(--gold);
+    font-size:24px;
+    width:43px;
+    height:43px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO / COVER
+========================= */
+
+.hero{
+    min-height:calc(100vh - 116px);
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:#050505;
+}
+
+.hero-cover{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    opacity:.72;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.65) 45%,rgba(0,0,0,.25) 100%),
+        linear-gradient(0deg,rgba(0,0,0,.7),transparent 45%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:min(1200px,92%);
+    margin:auto;
+    padding:80px 0;
+}
+
+.hero-tag{
+    color:var(--gold-light);
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,7vw,82px);
+    line-height:1;
+    max-width:700px;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero p{
+    max-width:620px;
+    color:#ddd;
+    font-size:17px;
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:12px 22px;
+    border-radius:4px;
+    font-size:14px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:#080808;
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:#080808;
+}
+
+.hero-badge{
+    margin-top:42px;
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.hero-badge div{
+    border-left:2px solid var(--gold);
+    padding-left:13px;
+}
+
+.hero-badge strong{
+    display:block;
+    color:var(--gold);
+    font-size:22px;
+}
+
+.hero-badge span{
+    color:#ccc;
+    font-size:11px;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.section{
+    padding:90px 0;
+}
+
+.container{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading .eyebrow{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.section-heading h2{
+    font-family:Georgia,serif;
+    font-size:clamp(30px,5vw,48px);
     margin-bottom:12px;
 }
 
-.card p{
-    color:#ccc;
+.section-heading p{
+    color:#aaa;
+    max-width:680px;
+    margin:auto;
 }
 
-.about{
+/* =========================
+   SLIDER
+========================= */
+
+.slider-section{
+    background:#0d0d0d;
+    padding:70px 0;
+}
+
+.slider-wrap{
+    width:min(1150px,94%);
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+    border:1px solid var(--border);
+    border-radius:10px;
+    box-shadow:var(--shadow);
     background:#111;
 }
 
-.about-text{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-    color:#ddd;
-    font-size:17px;
+.slider{
+    display:flex;
+    transition:transform .8s ease;
 }
 
-.contact{
+.slide{
+    min-width:100%;
+    height:min(62vw,560px);
+    position:relative;
+    overflow:hidden;
+    background:#151515;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 45%);
+}
+
+.slide-label{
+    position:absolute;
+    z-index:2;
+    left:30px;
+    bottom:28px;
+    background:rgba(0,0,0,.65);
+    border-left:3px solid var(--gold);
+    padding:10px 16px;
+    font-weight:bold;
+}
+
+.slider-btn{
+    position:absolute;
+    z-index:4;
+    top:50%;
+    transform:translateY(-50%);
+    width:45px;
+    height:45px;
+    border:1px solid var(--gold);
+    background:rgba(0,0,0,.65);
+    color:var(--gold);
+    border-radius:50%;
+    cursor:pointer;
+    font-size:21px;
+}
+
+.slider-btn:hover{
+    background:var(--gold);
+    color:#000;
+}
+
+.prev{
+    left:18px;
+}
+
+.next{
+    right:18px;
+}
+
+.dots{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:18px;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#555;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dot.active{
+    background:var(--gold);
+    width:25px;
+    border-radius:10px;
+}
+
+/* =========================
+   TRUST BAR
+========================= */
+
+.trust{
+    background:var(--gold);
+    color:#090909;
+    padding:25px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
     text-align:center;
+}
+
+.trust-item{
+    border-right:1px solid rgba(0,0,0,.25);
+}
+
+.trust-item:last-child{
+    border:none;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:22px;
+}
+
+.trust-item span{
+    font-size:11px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+.collections{
+    background:var(--cream);
+    color:#111;
+}
+
+.collections .section-heading p{
+    color:#555;
+}
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.collection-card{
+    min-height:180px;
+    background:#111;
+    border:1px solid #333;
+    padding:30px;
+    position:relative;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.collection-card::before{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    right:-40px;
+    top:-40px;
+    opacity:.4;
+}
+
+.collection-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    border-color:var(--gold);
+}
+
+.collection-number{
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.collection-card h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    margin:12px 0 8px;
+}
+
+.collection-card p{
+    color:#aaa;
+    font-size:13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    background:#090909;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service-card{
+    background:#111;
+    border:1px solid #252525;
+    padding:30px 22px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-5px);
+}
+
+.service-icon{
+    font-size:28px;
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    font-size:18px;
+    margin-bottom:9px;
+}
+
+.service-card p{
+    color:#999;
+    font-size:13px;
+}
+
+/* =========================
+   CUSTOM GALLERY
+========================= */
+
+.gallery-section{
+    background:#f4f0e7;
+    color:#111;
+}
+
+.gallery-section .section-heading p{
+    color:#555;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.gallery-item{
+    height:310px;
+    overflow:hidden;
+    background:#ddd;
+    border-radius:5px;
+    position:relative;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.06);
+}
+
+.gallery-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:20px;
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* =========================
+   ABOUT OWNER
+========================= */
+
+.about{
     background:#0d0d0d;
 }
 
-.contact-box{
+.about-grid{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:65px;
+    align-items:center;
+}
+
+.owner-photo{
+    position:relative;
+}
+
+.owner-photo::before{
+    content:"";
+    position:absolute;
+    inset:15px -15px -15px 15px;
+    border:1px solid var(--gold);
+    z-index:0;
+}
+
+.owner-photo img{
+    position:relative;
+    z-index:1;
+    width:100%;
+    max-height:570px;
+    object-fit:cover;
+    border-radius:4px;
+}
+
+.about-content .eyebrow{
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.about-content h2{
+    font-family:Georgia,serif;
+    font-size:clamp(34px,5vw,55px);
+    line-height:1.1;
+    margin:12px 0 20px;
+}
+
+.about-content h2 span{
+    color:var(--gold);
+}
+
+.about-content p{
+    color:#aaa;
+    margin-bottom:15px;
+}
+
+.experience-box{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:25px 0;
+    padding:18px;
+    border:1px solid var(--border);
+    background:#111;
+}
+
+.experience-box strong{
+    color:var(--gold);
+    font-size:35px;
+    font-family:Georgia,serif;
+}
+
+.experience-box span{
+    color:#ccc;
+    font-size:12px;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.process{
+    background:var(--cream);
+    color:#111;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.process-card{
+    padding:35px 25px;
+    border:1px solid #d6d0c4;
+    background:#fff;
+    text-align:center;
+    position:relative;
+}
+
+.process-number{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#111;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    font-weight:bold;
+}
+
+.process-card h3{
+    margin-bottom:10px;
+}
+
+.process-card p{
+    color:#666;
+    font-size:13px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#090909;
+}
+
+.contact-intro{
+    text-align:center;
     max-width:700px;
-    margin:auto;
-    background:#151515;
-    border:1px solid #3a3020;
-    padding:35px;
+    margin:0 auto 45px;
 }
 
-.contact-box p{
-    margin:12px;
+.contact-intro p{
+    color:#999;
 }
 
-.contact-box strong{
-    color:#d4af63;
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
+
+.contact-card{
+    background:#111;
+    border:1px solid #292929;
+    padding:28px;
+    border-radius:5px;
+}
+
+.contact-card:hover{
+    border-color:var(--gold);
+}
+
+.contact-card .role{
+    color:var(--gold);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.contact-card h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    margin:7px 0 10px;
+}
+
+.contact-number{
+    color:#ddd;
+    font-size:15px;
+    margin-bottom:18px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.small-btn{
+    border:1px solid #444;
+    padding:8px 12px;
+    border-radius:4px;
+    font-size:12px;
+    color:#ddd;
+    transition:.3s;
+}
+
+.small-btn:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+}
+
+.location-box{
+    margin-top:25px;
+    padding:22px;
+    border:1px solid var(--border);
+    text-align:center;
+}
+
+.location-box strong{
+    color:var(--gold);
+}
+
+/* =========================
+   SOCIAL
+========================= */
+
+.social-section{
+    background:#111;
+    padding:55px 0;
+    text-align:center;
+}
+
+.social-section h3{
+    font-family:Georgia,serif;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.social-section p{
+    color:#999;
+    margin-bottom:25px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.social-link{
+    border:1px solid #3a3a3a;
+    padding:10px 17px;
+    border-radius:4px;
+    color:#ddd;
+    font-size:13px;
+    transition:.3s;
+}
+
+.social-link:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.final-cta{
+    padding:80px 0;
+    background:
+        linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.92)),
+        url("images/Cover.png") center/cover;
+    text-align:center;
+}
+
+.final-cta h2{
+    font-family:Georgia,serif;
+    font-size:clamp(34px,5vw,52px);
+    margin-bottom:15px;
+}
+
+.final-cta p{
+    color:#ccc;
+    max-width:650px;
+    margin:0 auto 25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    text-align:center;
-    padding:30px 20px;
     background:#050505;
-    border-top:1px solid #3a3020;
+    border-top:1px solid #222;
+    padding:30px 0;
+}
+
+.footer-inner{
+    width:min(1200px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.footer-brand{
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.footer-copy{
+    color:#777;
+    font-size:11px;
+}
+
+.footer-top{
     color:#aaa;
+    font-size:12px;
 }
 
-footer span{
-    color:#d4af63;
+.footer-top:hover{
+    color:var(--gold);
 }
 
-@media(max-width:800px){
+/* =========================
+   FLOATING WHATSAPP
+========================= */
 
-    .navbar{
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:1000;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:#090909;
+        border-bottom:1px solid var(--border);
+        display:none;
         flex-direction:column;
-        gap:12px;
+        align-items:stretch;
+        padding:18px 5%;
+        gap:0;
     }
 
-    nav a{
-        margin:0 7px;
-        font-size:12px;
+    .nav-links.active{
+        display:flex;
     }
 
-    .hero h1{
-        font-size:38px;
+    .nav-links a{
+        padding:13px 0;
+        border-bottom:1px solid #222;
     }
 
-    .hero h2{
-        font-size:20px;
+    .nav-links a:last-child{
+        border:none;
     }
 
-    .cards{
+    .nav-cta{
+        text-align:center;
+        margin-top:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero-content{
+        padding:65px 0;
+    }
+
+    .collection-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .contact-grid{
         grid-template-columns:1fr;
     }
 
-    section{
-        padding:65px 20px;
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+        row-gap:20px;
     }
+
+    .trust-item:nth-child(2){
+        border:none;
+    }
+
 }
+
+@media(max-width:600px){
+
+    .top-strip{
+        font-size:11px;
+        height:34px;
+    }
+
+    .navbar{
+        height:70px;
+    }
+
+    .nav-links{
+        top:70px;
+    }
+
+    .logo-area img{
+        width:47px;
+        height:47px;
+    }
+
+    .logo-text strong{
+        font-size:14px;
+    }
+
+    .logo-text small{
+        font-size:8px;
+    }
+
+    .hero{
+        min-height:620px;
+    }
+
+    .hero-cover{
+        object-position:center;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .hero-badge{
+        gap:15px;
+    }
+
+    .section{
+        padding:65px 0;
+    }
+
+    .slider-section{
+        padding:45px 0;
+    }
+
+    .slide{
+        height:65vw;
+        min-height:250px;
+    }
+
+    .slider-btn{
+        width:38px;
+        height:38px;
+        font-size:17px;
+    }
+
+    .prev{
+        left:10px;
+    }
+
+    .next{
+        right:10px;
+    }
+
+    .slide-label{
+        left:15px;
+        bottom:15px;
+        font-size:11px;
+    }
+
+    .collection-grid,
+    .service-grid,
+    .gallery-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item{
+        height:300px;
+    }
+
+    .owner-photo{
+        margin:0 15px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .whatsapp-float{
+        width:53px;
+        height:53px;
+        right:15px;
+        bottom:15px;
+    }
+
+}
+
+/* Reduced motion */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        scroll-behavior:auto !important;
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+    }
+
+}
+
 </style>
 </head>
 
-<body>
+<body id="top">
 
-<header>
-<div class="navbar">
+<!-- =========================
+     MOVING STRIP
+========================= -->
 
-<div class="logo">AMR.QAZI FURNITURE</div>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#collections">Collections</a>
-<a href="#custom">Custom</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
+<div class="top-strip">
+    <div class="ticker">
+        <span>AMR.QAZI FURNITURE</span>
+        <span>Established 1975</span>
+        <span>Custom Furniture • Made to Order</span>
+        <span>Bedroom • Kitchen • Office • Bridal • Interiors</span>
+        <span>Karachi, Pakistan</span>
+    </div>
 </div>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#top" class="logo-area">
+
+            <img src="images/Logo.png"
+                 alt="AMR.Qazi Furniture Logo">
+
+            <div class="logo-text">
+                <strong>AMR.QAZI FURNITURE</strong>
+                <small>CUSTOM FURNITURE & INTERIORS</small>
+            </div>
+
+        </a>
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <a class="nav-cta"
+               href="https://wa.me/923219225746?text=Assalamualaikum%20AMR.Qazi%20Furniture%2C%20I%20would%20like%20to%20discuss%20a%20furniture%20project."
+               target="_blank">
+                WhatsApp Us
+            </a>
+
+        </nav>
+
+    </div>
+
 </header>
 
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+    <img class="hero-cover"
+         src="images/Cover.png"
+         alt="AMR.Qazi Furniture Cover">
 
-<h1>AMR.Qazi Furniture</h1>
+    <div class="hero-content">
 
-<h2>Luxury Furniture • Custom Designs • Interior Solutions</h2>
+        <div class="hero-tag">
+            Since 1975 • Karachi
+        </div>
 
-<p>
-Furniture made to your vision — crafted on order with attention to design,
-quality and finishing.
-</p>
+        <h1>
+            Furniture Made<br>
+            <span>For Your Space.</span>
+        </h1>
 
-<a class="btn" href="#collections">Explore Collection</a>
+        <p>
+            Custom-made furniture crafted with experience,
+            attention to detail and a commitment to quality.
+            From individual pieces to complete interiors.
+        </p>
 
-<a class="btn" href="https://wa.me/923219225746">
-WhatsApp Us
-</a>
+        <div class="hero-buttons">
 
-</div>
+            <a class="btn btn-gold"
+               href="#collections">
+                Explore Collections
+            </a>
 
-</section>
+            <a class="btn btn-outline"
+               href="https://wa.me/923219225746?text=Assalamualaikum%20AMR.Qazi%20Furniture%2C%20I%20want%20to%20discuss%20a%20custom%20furniture%20project."
+               target="_blank">
+                Get a Quote
+            </a>
 
+        </div>
 
-<section id="collections">
+        <div class="hero-badge">
 
-<div class="container">
+            <div>
+                <strong>1975</strong>
+                <span>Established</span>
+            </div>
 
-<h2 class="section-title">Our Collections</h2>
+            <div>
+                <strong>50+</strong>
+                <span>Years Experience</span>
+            </div>
 
-<div class="cards">
+            <div>
+                <strong>Custom</strong>
+                <span>Made To Order</span>
+            </div>
 
-<div class="card">
-<h3>Bedroom Furniture</h3>
-<p>Complete bedroom sets, wardrobes, beds, dressing tables and custom designs.</p>
-</div>
+        </div>
 
-<div class="card">
-<h3>Kitchen Furniture</h3>
-<p>Custom kitchen cabinets and complete kitchen furniture designed to order.</p>
-</div>
-
-<div class="card">
-<h3>Office Furniture</h3>
-<p>Professional office desks, cabinets, tables and complete office solutions.</p>
-</div>
-
-<div class="card">
-<h3>Bridal Furniture</h3>
-<p>Elegant bridal bedroom furniture and customized wedding furniture sets.</p>
-</div>
-
-<div class="card">
-<h3>Living Room Furniture</h3>
-<p>Custom furniture for stylish and comfortable living spaces.</p>
-</div>
-
-<div class="card">
-<h3>Bungalow Interiors</h3>
-<p>Complete furniture and interior solutions for luxury homes and bungalows.</p>
-</div>
-
-</div> 
-
-    <div class="card">
-  <h3>Custom Furniture</h3>
-  <p>Unique made-to-order furniture, designed and crafted according to your requirements.</p>
-
-  <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; margin-top:15px;">
-    <img src="images/custom-furniture/file_00000000d69882119f62ce1454f5297e.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_000000009fe082119786e4497363cf96.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_00000000846c8211ad20b916440dc2ba.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_0000000078c882119916282182776cfc.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_0000000064c08211b5e6cdefba53f85e.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_000000004dfc8211b5fa86c29a0f27d4.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_0000000045e88211825a17287eeb25f0.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_000000000f2c8211b27cbf557d0ec5fb.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/file_00000000054882118bb3ae1658e7e15f.png" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/IMG_20261002_132520_303.jpg" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/IMG_20261002_132517_318.jpg" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-    <img src="images/custom-furniture/IMG_20261002_132514_278.jpg" alt="Custom Furniture" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
-  </div>
-    </div>
-</div>
-
-</section>
-
-
-<section id="custom" class="about">
-
-<div class="container">
-
-<h2 class="section-title">Custom Furniture — Made to Order</h2>
-
-    <section id="custom-furniture">
-  <h2>Custom Furniture</h2>
-  <p>Made to order according to your space, design and requirements.</p>
-
-  <div class="custom-gallery">
-
-    <img src="images/custom-furniture/file_00000000d69882119f62ce1454f5297e.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_000000009fe082119786e4497363cf96.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_00000000846c8211ad20b916440dc2ba.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_0000000078c882119916282182776cfc.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_0000000064c08211b5e6cdefba53f85e.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_000000004dfc8211b5fa86c29a0f27d4.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_0000000045e88211825a17287eeb25f0.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_000000000f2c8211b27cbf557d0ec5fb.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/file_00000000054882118bb3ae1658e7e15f.png" alt="Custom Furniture">
-    <img src="images/custom-furniture/IMG_20261002_132520_303.jpg" alt="Custom Furniture">
-    <img src="images/custom-furniture/IMG_20261002_132517_318.jpg" alt="Custom Furniture">
-    <img src="images/custom-furniture/IMG_20261002_132514_278.jpg" alt="Custom Furniture">
-
-  </div>
-    </section>
-
-<div class="about-text">
-
-<p>
-Have a specific design, size or style in mind?
-AMR.Qazi Furniture creates customized furniture according to your
-requirements and interior space.
-</p>
-
-<br>
-
-<p>
-From bedroom sets and kitchens to office furniture and complete
-bungalow interiors, we work on custom orders with a focus on quality,
-functionality and elegant design.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<style>
-  /* AMR Qazi Furniture - About Section */
-  #about {
-    position: relative;
-    padding: 90px 7%;
-    background: #101010;
-    color: #f5f1e8;
-    overflow: hidden;
-  }
-
-  #about .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    align-items: center;
-    gap: 65px;
-  }
-
-  #about .about-photo {
-    position: relative;
-    max-width: 460px;
-    width: 100%;
-    margin: auto;
-  }
-
-  #about .about-photo::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid #c6a15b;
-    z-index: 0;
-  }
-
-  #about .about-photo img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 2px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-  }
-
-  #about .about-content {
-    max-width: 650px;
-  }
-
-  #about .about-eyebrow {
-    color: #c6a15b;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
-
-  #about h2 {
-    color: #f7f2e8;
-    font-size: clamp(30px, 4vw, 48px);
-    line-height: 1.2;
-    margin: 0 0 22px;
-    font-weight: 600;
-  }
-
-  #about h2 span {
-    color: #c6a15b;
-  }
-
-  #about .about-intro {
-    color: #e0d9cc;
-    font-size: 17px;
-    line-height: 1.9;
-    margin-bottom: 18px;
-  }
-
-  #about .about-description {
-    color: #bdb7ac;
-    font-size: 15px;
-    line-height: 1.9;
-    margin-bottom: 25px;
-  }
-
-  #about .owner-name {
-    color: #d7b56f;
-    font-size: 23px;
-    font-weight: 600;
-    margin: 0 0 7px;
-  }
-
-  #about .owner-title {
-    color: #c7c0b5;
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-  }
-
-  #about .about-divider {
-    width: 75px;
-    height: 2px;
-    background: #c6a15b;
-    margin: 25px 0;
-  }
-
-  #about .about-features {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 17px 25px;
-    margin: 25px 0 32px;
-  }
-
-  #about .feature {
-    display: flex;
-    align-items: flex-start;
-    gap: 11px;
-    color: #e6dfd2;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  #about .feature-icon {
-    color: #c6a15b;
-    font-size: 19px;
-    line-height: 1.4;
-  }
-
-  #about .about-button {
-    display: inline-block;
-    padding: 14px 27px;
-    background: #c6a15b;
-    color: #111;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border: 1px solid #c6a15b;
-    transition: all 0.3s ease;
-  }
-
-  #about .about-button:hover {
-    background: transparent;
-    color: #d7b56f;
-  }
-
-  #about .since-label {
-    display: inline-block;
-    margin-top: 25px;
-    color: #c6a15b;
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
-
-  @media (max-width: 800px) {
-    #about {
-      padding: 65px 6%;
-    }
-
-    #about .about-container {
-      grid-template-columns: 1fr;
-      gap: 45px;
-    }
-
-    #about .about-photo {
-      max-width: 380px;
-    }
-
-    #about .about-content {
-      max-width: 100%;
-    }
-
-    #about h2 {
-      font-size: 34px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    #about .about-features {
-      grid-template-columns: 1fr;
-      gap: 13px;
-    }
-
-    #about .about-intro {
-      font-size: 15px;
-    }
-  }
-</style>
-
-<section id="about">
-  <div class="about-container">
-
-    <div class="about-photo">
-      <img src="owner.jpg"
-           alt="Qazi M. Ashraf, Owner of AMR.Qazi Furniture">
     </div>
 
-    <div class="about-content">
+</section>
 
-      <div class="about-eyebrow">Our Story & Craftsmanship</div>
+<!-- =========================
+     IMAGE SLIDER
+========================= -->
 
-      <h2>
-        About <span>AMR.Qazi</span> Furniture
-      </h2>
+<section class="slider-section">
 
-      <p class="about-intro">
-        Built on craftsmanship, shaped by experience, and
-        inspired by timeless design.
-      </p>
+    <div class="section-heading">
 
-      <p class="about-description">
-        Since 1975, AMR.Qazi Furniture has been dedicated to
-        creating furniture that brings comfort, functionality,
-        and elegance into every space. What began with
-        traditional carpentry has grown into a furniture
-        business built on years of hands-on experience,
-        creative design, and a commitment to quality.
-      </p>
-
-      <div class="about-divider"></div>
-
-      <h3 class="owner-name">Qazi M. Ashraf</h3>
-
-      <p class="owner-title">
-        Owner | Master Carpenter | Furniture Designer & Creator
-      </p>
-
-      <p class="about-description">
-        With over five decades of experience in furniture
-        craftsmanship, Qazi M. Ashraf brings together
-        traditional woodworking skills and modern design
-        concepts. His work reflects attention to detail,
-        thoughtful designs, durable construction, and
-        beautiful finishing.
-      </p>
-
-      <div class="about-features">
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Custom Furniture Designs</span>
+        <div class="eyebrow">
+            Featured Furniture
         </div>
 
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Bedroom & Bridal Furniture</span>
-        </div>
+        <h2>Our Work</h2>
 
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Kitchen & Office Furniture</span>
-        </div>
-
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Interior Design & Furnishing</span>
-        </div>
-
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Bungalow & Home Interiors</span>
-        </div>
-
-        <div class="feature">
-          <span class="feature-icon">✦</span>
-          <span>Made-to-Order Furniture</span>
-        </div>
-      </div>
-
-      <p class="about-description">
-        Every project is approached with care, from the
-        initial idea to the final finish. Our aim is to
-        create furniture that suits our customers' spaces,
-        needs, and personal style.
-      </p>
-
-      <a class="about-button"
-         href="https://wa.me/92321925746"
-         target="_blank"
-         rel="noopener noreferrer">
-        CONTACT US
-      </a>
-
-      <div class="since-label">
-        CRAFTING FURNITURE SINCE 1975
-      </div>
+        <p>
+            Explore selected furniture designs and craftsmanship
+            from AMR.Qazi Furniture.
+        </p>
 
     </div>
-  </div>
+
+    <div class="slider-wrap">
+
+        <div class="slider" id="slider">
+
+            <div class="slide">
+                <img src="images/Slider1.png"
+                     alt="AMR.Qazi Furniture Design 1">
+                <div class="slide-label">Custom Furniture</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/Slider2.png"
+                     alt="AMR.Qazi Furniture Design 2">
+                <div class="slide-label">Premium Furniture</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/Slider3.jpg"
+                     alt="AMR.Qazi Furniture Design 3">
+                <div class="slide-label">Bedroom Furniture</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/Slider4.png"
+                     alt="AMR.Qazi Furniture Design 4">
+                <div class="slide-label">Made To Order</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/Slider5.png"
+                     alt="AMR.Qazi Furniture Design 5">
+                <div class="slide-label">Interior Furniture</div>
+            </div>
+
+        </div>
+
+        <button class="slider-btn prev"
+                id="prevBtn"
+                aria-label="Previous slide">
+            ‹
+        </button>
+
+        <button class="slider-btn next"
+                id="nextBtn"
+                aria-label="Next slide">
+            ›
+        </button>
+
+    </div>
+
+    <div class="dots" id="dots"></div>
+
 </section>
 
+<!-- =========================
+     TRUST BAR
+========================= -->
 
+<section class="trust">
 
-<section id="contact" class="contact">
+    <div class="container trust-grid">
 
-<div class="container">
+        <div class="trust-item">
+            <strong>1975</strong>
+            <span>Established</span>
+        </div>
 
-<h2 class="section-title">Contact Us</h2>
+        <div class="trust-item">
+            <strong>50+</strong>
+            <span>Years Experience</span>
+        </div>
 
-<div class="contact-box">
+        <div class="trust-item">
+            <strong>Custom</strong>
+            <span>Made To Order</span>
+        </div>
 
-<p><strong>Owner:</strong> Qazi M. Ashraf</p>
+        <div class="trust-item">
+            <strong>Karachi</strong>
+            <span>Based Furniture</span>
+        </div>
 
-<p><strong>Location:</strong> Liaquatabad, Karachi, Pakistan</p>
-
-<p><strong>WhatsApp / Phone:</strong> 03219225746</p>
-
-<a class="btn" href="https://wa.me/923219225746">
-Chat on WhatsApp
-</a>
-
-<a class="btn" href="tel:+923219225746">
-Call Now
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
+<!-- =========================
+     COLLECTIONS
+========================= -->
+
+<section class="section collections"
+         id="collections">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                What We Make
+            </div>
+
+            <h2>Furniture Collections</h2>
+
+            <p>
+                From everyday furniture to complete interiors,
+                choose the space you want to transform.
+            </p>
+
+        </div>
+
+        <div class="collection-grid">
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">01</span>
+                <h3>Bedroom Furniture</h3>
+                <p>
+                    Beds, wardrobes, dressing tables,
+                    side tables and complete bedroom sets.
+                </p>
+            </a>
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">02</span>
+                <h3>Kitchen Furniture</h3>
+                <p>
+                    Functional and customized kitchen
+                    furniture designed for your space.
+                </p>
+            </a>
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">03</span>
+                <h3>Office Furniture</h3>
+                <p>
+                    Practical desks, storage solutions
+                    and furniture for professional spaces.
+                </p>
+            </a>
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">04</span>
+                <h3>Bridal Furniture</h3>
+                <p>
+                    Specially designed furniture for
+                    elegant bridal and bedroom spaces.
+                </p>
+            </a>
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">05</span>
+                <h3>Living Room</h3>
+                <p>
+                    Furniture pieces designed to make
+                    your living space comfortable and refined.
+                </p>
+            </a>
+
+            <a href="#gallery" class="collection-card">
+                <span class="collection-number">06</span>
+                <h3>Bungalow Interiors</h3>
+                <p>
+                    Customized furniture and interior
+                    solutions for complete homes.
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section services"
+         id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Our Services
+            </div>
+
+            <h2>Built Around Your Needs</h2>
+
+            <p>
+                Tell us what you need and we can discuss
+                the furniture, dimensions and design for your space.
+            </p>
+
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">◆</div>
+                <h3>Custom Furniture</h3>
+                <p>
+                    Furniture made according to your
+                    requirements and available space.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">◇</div>
+                <h3>Made To Order</h3>
+                <p>
+                    Discuss your preferred design,
+                    dimensions and furniture requirements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">▣</div>
+                <h3>Interior Furniture</h3>
+                <p>
+                    Furniture solutions for bedrooms,
+                    offices, kitchens and complete homes.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✦</div>
+                <h3>Project Furniture</h3>
+                <p>
+                    Furniture requirements for homes,
+                    offices and larger interior projects.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="section gallery-section"
+         id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Furniture Gallery
+            </div>
+
+            <h2>Selected Work</h2>
+
+            <p>
+                A selection of furniture pieces and designs.
+                Contact us to discuss your own custom requirements.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_00000000d69882119f62ce1454f5297e.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Custom Furniture</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_000000009fe082119786e4497363cf96.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Furniture Design</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_00000000846c8211ad20b916440dc2ba.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Bedroom Furniture</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_0000000078c882119916282182776cfc.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Made To Order</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_0000000064c08211b5e6cdefba53f85e.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Furniture Collection</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_000000004dfc8211b5fa86c29a0f27d4.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Custom Design</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_0000000045e88211825a17287eeb25f0.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Furniture Craftsmanship</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_000000000f2c8211b27cbf557d0ec5fb.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Premium Furniture</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/file_00000000054882118bb3ae1658e7e15f.png"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Interior Furniture</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/IMG_20261002_132520_303.jpg"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Custom Furniture</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/IMG_20261002_132517_318.jpg"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Furniture Design</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/custom-furniture/IMG_20261002_132514_278.jpg"
+                     alt="Custom furniture">
+                <div class="gallery-overlay">Made To Order</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     ABOUT OWNER
+========================= -->
+
+<section class="section about"
+         id="about">
+
+    <div class="container about-grid">
+
+        <div class="owner-photo">
+
+            <img src="images/Owner.jpg"
+                 alt="Qazi M. Ashraf - Owner of AMR.Qazi Furniture">
+
+        </div>
+
+        <div class="about-content">
+
+            <div class="eyebrow">
+                About The Business
+            </div>
+
+            <h2>
+                Experience You Can<br>
+                <span>Build On.</span>
+            </h2>
+
+            <p>
+                AMR.Qazi Furniture is a Karachi-based furniture
+                business with roots going back to 1975.
+            </p>
+
+            <p>
+                Under the experience and guidance of
+                <strong>Qazi M. Ashraf</strong>, the business
+                focuses on custom furniture, made-to-order
+                work and furniture solutions for homes,
+                offices and interior projects.
+            </p>
+
+            <div class="experience-box">
+
+                <strong>50+</strong>
+
+                <span>
+                    Years of practical furniture-making
+                    and business experience.
+                </span>
+
+            </div>
+
+            <a class="btn btn-gold"
+               href="https://wa.me/923219225746?text=Assalamualaikum%20Qazi%20M.%20Ashraf%2C%20I%20would%20like%20to%20discuss%20a%20furniture%20project."
+               target="_blank">
+                Discuss Your Project
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="section process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Simple Process
+            </div>
+
+            <h2>How To Order</h2>
+
+            <p>
+                Start with an idea and discuss your furniture
+                requirements directly with our team.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="process-number">01</div>
+
+                <h3>Tell Us What You Need</h3>
+
+                <p>
+                    Share your furniture type,
+                    preferred design and requirements.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">02</div>
+
+                <h3>Discuss Your Project</h3>
+
+                <p>
+                    Discuss dimensions, design,
+                    materials and other project details.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">03</div>
+
+                <h3>Move Forward</h3>
+
+                <p>
+                    Once the requirements are discussed,
+                    proceed with your furniture project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact"
+         id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Contact Our Team
+            </div>
+
+            <h2>Let's Talk Furniture</h2>
+
+        </div>
+
+        <div class="contact-intro">
+
+            <p>
+                For custom furniture, orders, project discussions
+                and general enquiries, contact the appropriate
+                member of our team.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- OWNER -->
+
+            <div class="contact-card">
+
+                <div class="role">
+                    Owner
+                </div>
+
+                <h3>Qazi M. Ashraf</h3>
+
+                <div class="contact-number">
+                    +92 321 9225746
+                </div>
+
+                <div class="contact-buttons">
+
+                    <a class="small-btn"
+                       href="tel:+923219225746">
+                        Call
+                    </a>
+
+                    <a class="small-btn"
+                       href="https://wa.me/923219225746"
+                       target="_blank">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BUSINESS MANAGER -->
+
+            <div class="contact-card">
+
+                <div class="role">
+                    Business & Sales Manager
+                </div>
+
+                <h3>Qazi Abdul Moiz</h3>
+
+                <div class="contact-number">
+                    +92 300 5039197
+                </div>
+
+                <div class="contact-buttons">
+
+                    <a class="small-btn"
+                       href="tel:+923005039197">
+                        Call
+                    </a>
+
+                    <a class="small-btn"
+                       href="https://wa.me/923005039197"
+                       target="_blank">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- OPERATIONS MANAGER -->
+
+            <div class="contact-card">
+
+                <div class="role">
+                    Manufacturing & Operations Manager
+                </div>
+
+                <h3>Qazi Abdullah</h3>
+
+                <div class="contact-number">
+                    +92 303 2716436
+                </div>
+
+                <div class="contact-buttons">
+
+                    <a class="small-btn"
+                       href="tel:+923032716436">
+                        Call
+                    </a>
+
+                    <a class="small-btn"
+                       href="https://wa.me/923032716436"
+                       target="_blank">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="location-box">
+
+            <strong>Location</strong><br>
+
+            Liaquatabad, Karachi, Pakistan
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SOCIAL
+========================= -->
+
+<section class="social-section">
+
+    <div class="container">
+
+        <h3>Stay Connected</h3>
+
+        <p>
+            Follow AMR.Qazi Furniture for furniture,
+            designs and updates.
+        </p>
+
+        <div class="social-links">
+
+            <a class="social-link"
+               href="https://www.facebook.com/share/183SmDGW62/"
+               target="_blank">
+                Facebook
+            </a>
+
+            <a class="social-link"
+               href="https://youtube.com/@amrqazifurniture?si=K1ylssY3q-d4H6yQ"
+               target="_blank">
+                YouTube
+            </a>
+
+            <a class="social-link"
+               href="https://www.instagram.com/qazi_ashraf922?stkn=azV4Nm1reXRyaGI5"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a class="social-link"
+               href="https://www.tiktok.com/@qaziashraf510?_r=1&_t=ZS-9AGlezgpg1v"
+               target="_blank">
+                TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <h2>Have a Furniture Idea?</h2>
+
+        <p>
+            Tell us what you have in mind and start a conversation
+            about your custom furniture project.
+        </p>
+
+        <a class="btn btn-gold"
+           href="https://wa.me/923219225746?text=Assalamualaikum%20AMR.Qazi%20Furniture%2C%20I%20would%20like%20to%20discuss%20my%20furniture%20requirements."
+           target="_blank">
+            Start on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-<p>
-© 2026 <span>AMR.Qazi Furniture</span> — Custom Furniture & Interior Solutions
-</p>
+    <div class="footer-inner">
+
+        <div>
+
+            <div class="footer-brand">
+                AMR.QAZI FURNITURE
+            </div>
+
+            <div class="footer-copy">
+                Custom Furniture & Interior Solutions • Karachi
+            </div>
+
+        </div>
+
+        <a href="#top" class="footer-top">
+            Back to Top ↑
+        </a>
+
+    </div>
 
 </footer>
 
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a class="whatsapp-float"
+   href="https://wa.me/923219225746?text=Assalamualaikum%20AMR.Qazi%20Furniture%2C%20I%20would%20like%20to%20discuss%20a%20furniture%20project."
+   target="_blank"
+   aria-label="Contact AMR.Qazi Furniture on WhatsApp">
+
+    ☎
+
+</a>
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuBtn.textContent = "✕";
+    }else{
+        menuBtn.textContent = "☰";
+    }
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("active");
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+
+/* =========================
+   SLIDER
+========================= */
+
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll(".slide");
+const dotsContainer = document.getElementById("dots");
+
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentSlide = 0;
+let autoSlide;
+
+for(let i = 0; i < slides.length; i++){
+
+    const dot = document.createElement("span");
+
+    dot.className = "dot";
+
+    if(i === 0){
+        dot.classList.add("active");
+    }
+
+    dot.addEventListener("click", function(){
+        goToSlide(i);
+        restartAutoSlide();
+    });
+
+    dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll(".dot");
+
+function updateSlider(){
+
+    slider.style.transform =
+        "translateX(-" + (currentSlide * 100) + "%)";
+
+    dots.forEach(function(dot, index){
+
+        dot.classList.toggle(
+            "active",
+            index === currentSlide
+        );
+
+    });
+
+}
+
+function goToSlide(index){
+
+    currentSlide = index;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    if(currentSlide < 0){
+        currentSlide = slides.length - 1;
+    }
+
+    updateSlider();
+
+}
+
+function nextSlide(){
+
+    goToSlide(currentSlide + 1);
+
+}
+
+function previousSlide(){
+
+    goToSlide(currentSlide - 1);
+
+}
+
+nextBtn.addEventListener("click", function(){
+
+    nextSlide();
+    restartAutoSlide();
+
+});
+
+prevBtn.addEventListener("click", function(){
+
+    previousSlide();
+    restartAutoSlide();
+
+});
+
+
+function startAutoSlide(){
+
+    autoSlide = setInterval(function(){
+
+        nextSlide();
+
+    }, 5000);
+
+}
+
+function restartAutoSlide(){
+
+    clearInterval(autoSlide);
+    startAutoSlide();
+
+}
+
+startAutoSlide();
+
+
+/* Pause slider while mouse is over it */
+
+const sliderWrap = document.querySelector(".slider-wrap");
+
+sliderWrap.addEventListener("mouseenter", function(){
+
+    clearInterval(autoSlide);
+
+});
+
+sliderWrap.addEventListener("mouseleave", function(){
+
+    startAutoSlide();
+
+});
+
+</script>
+
 </body>
-  </html>
+    </html>
