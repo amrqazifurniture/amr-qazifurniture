@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amrqazifurniture.github.io/amr-qazifurniture/sitemap.xml
