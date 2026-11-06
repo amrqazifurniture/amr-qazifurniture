@@ -696,12 +696,15 @@ button{
     content:"";
     position:absolute;
     z-index:5;
-    right:14px;
-    bottom:14px;
-    width:76px;
-    height:76px;
+    left:50%;
+    top:50%;
+    right:auto;
+    bottom:auto;
+    transform:translate(-50%,-50%);
+    width:clamp(110px,18%,165px);
+    height:clamp(110px,18%,165px);
     background:url("images/Logo.png") center/contain no-repeat;
-    opacity:.22;
+    opacity:.48;
     pointer-events:none;
     filter:drop-shadow(0 1px 3px rgba(0,0,0,.65));
 }
@@ -1568,7 +1571,7 @@ footer{
         </div>
         <div class="video-frame">
             <iframe
-                src="https://www.youtube-nocookie.com/embed/videoseries?list=UU6mxF8H5wHHYqVIzvzzZJ6Q"
+                src="https://www.youtube.com/embed/videoseries?list=UU6mxF8H5wHHYqVIzvzzZJ6Q"
                 title="AMR.QAZI Furniture YouTube videos"
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
