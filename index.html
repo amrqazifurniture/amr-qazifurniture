@@ -584,6 +584,16 @@ button{
 @media(max-width:420px){.product-photos{grid-template-columns:1fr}.product-photo{height:260px}}
 
 /* =========================
+   YOUTUBE VIDEOS
+========================= */
+.videos-section{background:#0b0b0b;color:#fff}
+.video-frame{width:min(100%,960px);margin:0 auto;border:1px solid var(--border);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/9;background:#000}
+.video-frame iframe{width:100%;height:100%;border:0;display:block}
+.video-subscribe{text-align:center;margin-top:25px}
+.video-subscribe a{display:inline-block;background:var(--gold);color:#080808;padding:12px 22px;border-radius:4px;font-weight:700;font-size:13px}
+.video-subscribe a:hover{background:var(--gold-light)}
+
+/* =========================
    SERVICES
 ========================= */
 
@@ -1297,6 +1307,7 @@ footer{
             <a href="#home">Home</a>
             <a href="#collections">Collections</a>
             <a href="#products">Products</a>
+            <a href="#videos">Videos</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
@@ -1544,6 +1555,32 @@ footer{
 <!-- =========================
      SERVICES
 ========================= -->
+
+<!-- =========================
+     YOUTUBE VIDEOS
+========================= -->
+<section class="section videos-section" id="videos">
+    <div class="container">
+        <div class="section-heading">
+            <div class="eyebrow">Watch Our Work</div>
+            <h2>Furniture Videos</h2>
+            <p>Explore furniture designs, finishing details and our latest videos on the AMR.QAZI Furniture YouTube channel.</p>
+        </div>
+        <div class="video-frame">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=UU6mxF8H5wHHYqVIzvzzZJ6Q"
+                title="AMR.QAZI Furniture YouTube videos"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-subscribe">
+            <a href="https://www.youtube.com/channel/UC6mxF8H5wHHYqVIzvzzZJ6Q?sub_confirmation=1" target="_blank" rel="noopener">Visit & Subscribe on YouTube</a>
+        </div>
+    </div>
+</section>
 
 <section class="section services"
          id="services">
