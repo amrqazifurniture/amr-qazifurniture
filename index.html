@@ -586,6 +586,20 @@ button{
 }
 
 /* =========================
+   PRODUCTS
+========================= */
+.products-section{background:#101010;color:#fff}
+.product-group{margin:34px 0 48px}
+.product-group h3{font-family:Georgia,serif;font-size:25px;color:var(--gold);margin-bottom:8px}
+.product-group p{color:#aaa;margin-bottom:18px}
+.product-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product-photo{height:300px;background:#1b1b1b;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.product-photo:hover img{transform:scale(1.04)}
+@media(max-width:700px){.product-photos{grid-template-columns:repeat(2,1fr)}.product-photo{height:220px}}
+@media(max-width:420px){.product-photos{grid-template-columns:1fr}.product-photo{height:260px}}
+
+/* =========================
    SERVICES
 ========================= */
 
@@ -1275,6 +1289,7 @@ footer{
 
             <a href="#home">Home</a>
             <a href="#collections">Collections</a>
+            <a href="#products">Products</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
@@ -1550,6 +1565,38 @@ footer{
 
     </div>
 
+</section>
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+<section class="section products-section" id="products">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Our Products</div>
+      <h2>Bedroom Sets</h2>
+      <p>Explore our available bedroom furniture designs.</p>
+    </div>
+
+    <div class="product-group">
+      <h3>Bedroom Set 01 — Deco Finish</h3>
+      <p>Complete bedroom set • 2 product photos</p>
+      <div class="product-photos">
+        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(1).jpeg" alt="AMR Qazi Furniture Deco bedroom set view 1"></div>
+        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(2).jpeg" alt="AMR Qazi Furniture Deco bedroom set view 2"></div>
+      </div>
+    </div>
+
+    <div class="product-group">
+      <h3>Bedroom Set 02 — Lamination Finish</h3>
+      <p>Complete bedroom set • 3 product photos</p>
+      <div class="product-photos">
+        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(1).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 1"></div>
+        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(2).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 2"></div>
+        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(3).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 3"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- =========================
