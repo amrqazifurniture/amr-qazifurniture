@@ -540,9 +540,9 @@ button{
     gap:20px;
 }
 .collection-card{
-    min-height:330px;
-    background:#111;
-    border:1px solid #333;
+    min-height:270px;
+    background:linear-gradient(145deg,#24211b,#101010 70%);
+    border:1px solid var(--border);
     position:relative;
     overflow:hidden;
     display:flex;
@@ -550,36 +550,19 @@ button{
     justify-content:flex-end;
     padding:0;
     transition:.35s;
-    isolation:isolate;
 }
-.collection-card img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-2;
-    transition:transform .6s;
-}
-.collection-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    z-index:-1;
-    background:linear-gradient(180deg,rgba(0,0,0,.08) 5%,rgba(0,0,0,.28) 38%,rgba(0,0,0,.94) 100%);
-}
-.collection-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
-    border-color:var(--gold);
-}
-.collection-card:hover img{transform:scale(1.06)}
+.collection-card:nth-child(2){background:linear-gradient(145deg,#29251b,#101010 70%)}
+.collection-card:nth-child(3){background:linear-gradient(145deg,#20252a,#101010 70%)}
+.collection-card:nth-child(4){background:linear-gradient(145deg,#2b2024,#101010 70%)}
+.collection-card:nth-child(5){background:linear-gradient(145deg,#24221d,#101010 70%)}
+.collection-card:nth-child(6){background:linear-gradient(145deg,#24201b,#101010 70%)}
+.collection-card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,.2);border-color:var(--gold)}
 .collection-copy{padding:25px;position:relative}
 .collection-number{color:var(--gold-light);font-size:12px;letter-spacing:2px}
 .collection-card h3{font-family:Georgia,serif;font-size:25px;margin:10px 0 8px;color:#fff}
-.collection-card p{color:#e0e0e0;font-size:13px;max-width:330px}
+.collection-card p{color:#d0d0d0;font-size:13px;max-width:330px}
 .collection-link{display:inline-block;margin-top:15px;color:var(--gold-light);font-size:11px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase}
-@media(max-width:900px){.collection-card{min-height:290px}}
+@media(max-width:900px){.collection-card{min-height:250px}}
 
 
 /* =========================
@@ -1489,30 +1472,12 @@ footer{
             <p>From everyday furniture to complete interiors, choose the space you want to transform.</p>
         </div>
         <div class="collection-grid">
-            <a href="#products" class="collection-card">
-                <img src="images/Slider1.png" alt="Bedroom furniture collection" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">01</span><h3>Bedroom Furniture</h3><p>Beds, wardrobes, dressing tables, side tables and complete bedroom sets.</p><span class="collection-link">Explore Bedroom Sets →</span></div>
-            </a>
-            <a href="#contact" class="collection-card">
-                <img src="images/Slider2.png" alt="Customized kitchen furniture" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">02</span><h3>Kitchen Furniture</h3><p>Functional and customized kitchen furniture designed for your space.</p><span class="collection-link">Discuss Your Kitchen →</span></div>
-            </a>
-            <a href="#contact" class="collection-card">
-                <img src="images/Slider3.jpg" alt="Office furniture collection" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">03</span><h3>Office Furniture</h3><p>Practical desks, storage solutions and furniture for professional spaces.</p><span class="collection-link">Discuss Office Furniture →</span></div>
-            </a>
-            <a href="#contact" class="collection-card">
-                <img src="images/Slider4.png" alt="Bridal furniture collection" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">04</span><h3>Bridal Furniture</h3><p>Specially designed furniture for elegant bridal and bedroom spaces.</p><span class="collection-link">Discuss Bridal Furniture →</span></div>
-            </a>
-            <a href="#contact" class="collection-card">
-                <img src="images/Slider5.png" alt="Living room furniture collection" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">05</span><h3>Living Room</h3><p>Furniture pieces designed to make your living space comfortable and refined.</p><span class="collection-link">Discuss Living Room →</span></div>
-            </a>
-            <a href="#contact" class="collection-card">
-                <img src="images/Cover.png" alt="Bungalow interior furniture" loading="lazy">
-                <div class="collection-copy"><span class="collection-number">06</span><h3>Bungalow Interiors</h3><p>Customized furniture and interior solutions for complete homes.</p><span class="collection-link">Plan Your Interior →</span></div>
-            </a>
+            <a href="#products" class="collection-card"><div class="collection-copy"><span class="collection-number">01</span><h3>Bedroom Furniture</h3><p>Beds, wardrobes, dressing tables, side tables and complete bedroom sets.</p><span class="collection-link">Explore Bedroom Sets →</span></div></a>
+            <a href="#contact" class="collection-card"><div class="collection-copy"><span class="collection-number">02</span><h3>Kitchen Furniture</h3><p>Functional and customized kitchen furniture designed for your space.</p><span class="collection-link">Discuss Your Kitchen →</span></div></a>
+            <a href="#contact" class="collection-card"><div class="collection-copy"><span class="collection-number">03</span><h3>Office Furniture</h3><p>Practical desks, storage solutions and furniture for professional spaces.</p><span class="collection-link">Discuss Office Furniture →</span></div></a>
+            <a href="#contact" class="collection-card"><div class="collection-copy"><span class="collection-number">04</span><h3>Bridal Furniture</h3><p>Specially designed furniture for elegant bridal and bedroom spaces.</p><span class="collection-link">Discuss Bridal Furniture →</span></div></a>
+            <a href="#contact" class="collection-card"><div class="collection-copy"><span class="collection-number">05</span><h3>Living Room</h3><p>Furniture pieces designed to make your living space comfortable and refined.</p><span class="collection-link">Discuss Living Room →</span></div></a>
+            <a href="#contact" class="collection-card"><div class="collection-copy"><span class="collection-number">06</span><h3>Bungalow Interiors</h3><p>Customized furniture and interior solutions for complete homes.</p><span class="collection-link">Plan Your Interior →</span></div></a>
         </div>
     </div>
 </section>
