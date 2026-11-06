@@ -1244,6 +1244,25 @@ footer{
 
 }
 
+
+/* PREMIUM PRODUCT CATALOGUE CARDS */
+.product-catalogue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.catalogue-card{background:#171717;border:1px solid rgba(212,175,55,.2);border-radius:8px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.catalogue-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 18px 42px rgba(0,0,0,.32)}
+.catalogue-image{height:300px;display:block;position:relative;overflow:hidden;background:#222}
+.catalogue-image img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.catalogue-card:hover .catalogue-image img{transform:scale(1.045)}
+.catalogue-number{position:absolute;top:15px;left:15px;background:rgba(8,8,8,.82);color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:6px 11px;font-size:11px;letter-spacing:1.5px}
+.catalogue-info{padding:23px 22px 25px}
+.catalogue-kicker{font-size:10px;letter-spacing:1.7px;color:var(--gold-light);font-weight:700}
+.catalogue-info h3{font:normal 25px Georgia,serif;color:#fff;margin:9px 0}
+.catalogue-info p{min-height:44px;color:#aaa;font-size:13px;line-height:1.7;margin-bottom:20px}
+.catalogue-button{display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid var(--gold);color:var(--gold-light);padding:12px 15px;font-size:12px;font-weight:700;letter-spacing:.6px;transition:.25s}
+.catalogue-button:hover{background:var(--gold);color:#080808}
+.catalogue-button span{font-size:17px}
+@media(max-width:900px){.product-catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.product-catalogue-grid{grid-template-columns:1fr;max-width:480px;margin:auto}.catalogue-image{height:280px}}
+
 </style>
     <link rel="canonical" href="https://amrqazifurniture.github.io/amr-qazifurniture/">
 </head>
@@ -1514,43 +1533,50 @@ footer{
 <section class="section products-section" id="products">
   <div class="container">
     <div class="section-heading">
-      <div class="eyebrow">Our Products</div>
-      <h2>Bedroom Sets</h2>
-      <p>Explore our available bedroom furniture designs.</p>
+      <div class="eyebrow">The Bedroom Collection</div>
+      <h2>Featured Bedroom Sets</h2>
+      <p>Explore each design through its own dedicated product catalogue.</p>
     </div>
 
-    <div class="product-group">
-      <h3>Bedroom Set 01 — Deco Finish</h3>
-      <p>Complete bedroom set • 2 product photos</p>
-      <div class="product-photos">
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(1).jpeg" alt="AMR Qazi Furniture Deco bedroom set view 1"></div>
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(2).jpeg" alt="AMR Qazi Furniture Deco bedroom set view 2"></div>
-      </div>
-    </div>
+    <div class="product-catalogue-grid">
+      <article class="catalogue-card">
+        <a class="catalogue-image" href="bedroom-set-01.html">
+          <img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(1).jpeg" alt="Deco finish bedroom set 01">
+          <span class="catalogue-number">01</span>
+        </a>
+        <div class="catalogue-info">
+          <span class="catalogue-kicker">DECO FINISH</span>
+          <h3>Bedroom Set 01</h3>
+          <p>Complete bedroom set with a refined deco finish.</p>
+          <a class="catalogue-button" href="bedroom-set-01.html">View Full Catalogue <span>↗</span></a>
+        </div>
+      </article>
 
-    <div class="product-group">
-      <h3>Bedroom Set 02 — Lamination Finish</h3>
-      <p>Complete bedroom set • 3 product photos</p>
-      <div class="product-photos">
-        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(1).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 1"></div>
-        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(2).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 2"></div>
-        <div class="product-photo"><img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(3).jpeg" alt="AMR Qazi Furniture Lamination bedroom set view 3"></div>
-      </div>
-    </div>
+      <article class="catalogue-card">
+        <a class="catalogue-image" href="bedroom-set-02.html">
+          <img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(1).jpeg" alt="Lamination finish bedroom set 02">
+          <span class="catalogue-number">02</span>
+        </a>
+        <div class="catalogue-info">
+          <span class="catalogue-kicker">LAMINATION FINISH</span>
+          <h3>Bedroom Set 02</h3>
+          <p>Complete bedroom set with a clean lamination finish.</p>
+          <a class="catalogue-button" href="bedroom-set-02.html">View Full Catalogue <span>↗</span></a>
+        </div>
+      </article>
 
-    <div class="product-group">
-      <h3>Bedroom Set 03 — Royal Blue &amp; White Deco</h3>
-      <p>Royal blue and white colour combination • Cushion detailing • Deco finish</p>
-      <div class="product-photos">
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010.jpeg" alt="AMR Qazi Furniture royal blue and white cushion bedroom set view 1"></div>
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010%20(1).jpeg" alt="AMR Qazi Furniture royal blue and white cushion bedroom set view 2"></div>
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010%20(2).jpeg" alt="AMR Qazi Furniture royal blue and white cushion bedroom set view 3"></div>
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010%20(3).jpeg" alt="AMR Qazi Furniture royal blue and white cushion bedroom set view 4"></div>
-        <div class="product-photo"><img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010%20(4).jpeg" alt="AMR Qazi Furniture royal blue and white cushion bedroom set view 5"></div>
-      </div>
-      <p><strong>Finish:</strong> Deco &nbsp; | &nbsp; <strong>Colours:</strong> Royal Blue and White &nbsp; | &nbsp; <strong>Detail:</strong> Cushioned design</p>
-      <p>For exact material, dimensions and pricing, please contact our team.</p>
-      <a class="btn btn-gold" href="https://wa.me/923219225746?text=Assalamualaikum%2C%20I%20would%20like%20details%20about%20Bedroom%20Set%2003%20(Royal%20Blue%20%26%20White%20Deco)." target="_blank" rel="noopener">Discuss This Set</a>
+      <article class="catalogue-card">
+        <a class="catalogue-image" href="bedroom-set-03.html">
+          <img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010.jpeg" alt="Royal blue and white cushioned deco bedroom set 03">
+          <span class="catalogue-number">03</span>
+        </a>
+        <div class="catalogue-info">
+          <span class="catalogue-kicker">DECO FINISH · ROYAL BLUE &amp; WHITE</span>
+          <h3>Royal Blue Cushion Bedroom Set</h3>
+          <p>Royal blue and white colour combination with cushioned detailing.</p>
+          <a class="catalogue-button" href="bedroom-set-03.html">View Full Catalogue <span>↗</span></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
