@@ -1246,22 +1246,25 @@ footer{
 
 
 /* PREMIUM PRODUCT CATALOGUE CARDS */
-.product-catalogue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
-.catalogue-card{background:#171717;border:1px solid rgba(212,175,55,.2);border-radius:8px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
-.catalogue-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 18px 42px rgba(0,0,0,.32)}
-.catalogue-image{height:300px;display:block;position:relative;overflow:hidden;background:#222}
-.catalogue-image img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
-.catalogue-card:hover .catalogue-image img{transform:scale(1.045)}
-.catalogue-number{position:absolute;top:15px;left:15px;background:rgba(8,8,8,.82);color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:6px 11px;font-size:11px;letter-spacing:1.5px}
-.catalogue-info{padding:23px 22px 25px}
+/* CLEAN EDITORIAL PRODUCT CATALOGUE */
+.product-catalogue-grid{display:flex;flex-direction:column;gap:28px;max-width:1040px;margin:0 auto}
+.catalogue-card{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);background:#171717;border:1px solid rgba(212,175,55,.22);overflow:hidden;min-height:330px;transition:border-color .25s,box-shadow .25s}
+.catalogue-card:hover{border-color:var(--gold);box-shadow:0 16px 38px rgba(0,0,0,.24)}
+.catalogue-image{height:100%;min-height:330px;display:block;position:relative;overflow:hidden;background:#222}
+.catalogue-image img{width:100%;height:100%;min-height:330px;object-fit:cover;display:block;transition:transform .55s}
+.catalogue-card:hover .catalogue-image img{transform:scale(1.025)}
+.catalogue-number{position:absolute;top:16px;left:16px;background:rgba(8,8,8,.84);color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:7px 12px;font-size:11px;letter-spacing:1.5px}
+.catalogue-info{padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
 .catalogue-kicker{font-size:10px;letter-spacing:1.7px;color:var(--gold-light);font-weight:700}
-.catalogue-info h3{font:normal 25px Georgia,serif;color:#fff;margin:9px 0}
-.catalogue-info p{min-height:44px;color:#aaa;font-size:13px;line-height:1.7;margin-bottom:20px}
-.catalogue-button{display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid var(--gold);color:var(--gold-light);padding:12px 15px;font-size:12px;font-weight:700;letter-spacing:.6px;transition:.25s}
+.catalogue-info h3{font:normal clamp(24px,3vw,34px) Georgia,serif;color:#fff;margin:12px 0}
+.catalogue-info p{color:#aaa;font-size:14px;line-height:1.8;margin:0 0 24px;max-width:440px}
+.catalogue-actions{display:flex;gap:10px;flex-wrap:wrap;width:100%}
+.catalogue-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;border:1px solid var(--gold);color:var(--gold-light);padding:11px 17px;font-size:11px;font-weight:700;letter-spacing:.65px;transition:.25s}
 .catalogue-button:hover{background:var(--gold);color:#080808}
-.catalogue-button span{font-size:17px}
-@media(max-width:900px){.product-catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.product-catalogue-grid{grid-template-columns:1fr;max-width:480px;margin:auto}.catalogue-image{height:280px}}
+.catalogue-button.primary{background:var(--gold);color:#080808}
+.catalogue-button.primary:hover{background:var(--gold-light)}
+.catalogue-button span{font-size:16px}
+@media(max-width:700px){.catalogue-card{grid-template-columns:1fr}.catalogue-image,.catalogue-image img{min-height:0;height:auto;aspect-ratio:16/10}.catalogue-info{padding:24px}.catalogue-actions{display:grid;grid-template-columns:1fr}.catalogue-button{width:100%}}
 
 </style>
     <link rel="canonical" href="https://amrqazifurniture.github.io/amr-qazifurniture/">
@@ -1534,47 +1537,56 @@ footer{
   <div class="container">
     <div class="section-heading">
       <div class="eyebrow">The Bedroom Collection</div>
-      <h2>Featured Bedroom Sets</h2>
-      <p>Explore each design through its own dedicated product catalogue.</p>
+      <h2>Featured Bedroom Designs</h2>
+      <p>One selected view of each design. Open its catalogue for the complete photo gallery and product information.</p>
     </div>
 
     <div class="product-catalogue-grid">
       <article class="catalogue-card">
-        <a class="catalogue-image" href="bedroom-set-01.html">
+        <a class="catalogue-image" href="bedroom-set-01.html" aria-label="Open Bedroom Set 01 catalogue">
           <img loading="lazy" src="images/deco-bedroom/bedroom-set-01/bedroom%20set%20%20(1).jpeg" alt="Deco finish bedroom set 01">
-          <span class="catalogue-number">01</span>
+          <span class="catalogue-number">DESIGN 01</span>
         </a>
         <div class="catalogue-info">
           <span class="catalogue-kicker">DECO FINISH</span>
           <h3>Bedroom Set 01</h3>
-          <p>Complete bedroom set with a refined deco finish.</p>
-          <a class="catalogue-button" href="bedroom-set-01.html">View Full Catalogue <span>↗</span></a>
+          <p>Explore this bedroom design, its available views and product information in the dedicated catalogue.</p>
+          <div class="catalogue-actions">
+            <a class="catalogue-button primary" href="bedroom-set-01.html">Explore This Design <span>↗</span></a>
+            <a class="catalogue-button" href="https://wa.me/923219225746?text=Assalamualaikum%20Qazi%20M.%20Ashraf%2C%20I%20am%20enquiring%20about%20Bedroom%20Set%2001%20from%20the%20AMR.QAZI%20Furniture%20website.%20Please%20share%20its%20details%20and%20price.">WhatsApp Enquiry <span>↗</span></a>
+          </div>
         </div>
       </article>
 
       <article class="catalogue-card">
-        <a class="catalogue-image" href="bedroom-set-02.html">
+        <a class="catalogue-image" href="bedroom-set-02.html" aria-label="Open Bedroom Set 02 catalogue">
           <img loading="lazy" src="images/lamination-bedroom/bedroom-set-02/bedroom%20set%202%20(1).jpeg" alt="Lamination finish bedroom set 02">
-          <span class="catalogue-number">02</span>
+          <span class="catalogue-number">DESIGN 02</span>
         </a>
         <div class="catalogue-info">
           <span class="catalogue-kicker">LAMINATION FINISH</span>
           <h3>Bedroom Set 02</h3>
-          <p>Complete bedroom set with a clean lamination finish.</p>
-          <a class="catalogue-button" href="bedroom-set-02.html">View Full Catalogue <span>↗</span></a>
+          <p>Explore this bedroom design, its available views and product information in the dedicated catalogue.</p>
+          <div class="catalogue-actions">
+            <a class="catalogue-button primary" href="bedroom-set-02.html">Explore This Design <span>↗</span></a>
+            <a class="catalogue-button" href="https://wa.me/923219225746?text=Assalamualaikum%20Qazi%20M.%20Ashraf%2C%20I%20am%20enquiring%20about%20Bedroom%20Set%2002%20from%20the%20AMR.QAZI%20Furniture%20website.%20Please%20share%20its%20details%20and%20price.">WhatsApp Enquiry <span>↗</span></a>
+          </div>
         </div>
       </article>
 
       <article class="catalogue-card">
-        <a class="catalogue-image" href="bedroom-set-03.html">
-          <img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010.jpeg" alt="Royal blue and white cushioned deco bedroom set 03">
-          <span class="catalogue-number">03</span>
+        <a class="catalogue-image" href="bedroom-set-03.html" aria-label="Open Royal Blue Cushion Bedroom Set catalogue">
+          <img loading="lazy" src="images/deco-bedroom/images/deco-bedroom/bedroom%20set%2010.jpeg" alt="Royal blue and white cushioned deco bedroom set">
+          <span class="catalogue-number">DESIGN 03</span>
         </a>
         <div class="catalogue-info">
           <span class="catalogue-kicker">DECO FINISH · ROYAL BLUE &amp; WHITE</span>
           <h3>Royal Blue Cushion Bedroom Set</h3>
-          <p>Royal blue and white colour combination with cushioned detailing.</p>
-          <a class="catalogue-button" href="bedroom-set-03.html">View Full Catalogue <span>↗</span></a>
+          <p>Royal blue and white colour combination with cushioned detailing. View all five photos and product information.</p>
+          <div class="catalogue-actions">
+            <a class="catalogue-button primary" href="bedroom-set-03.html">Explore This Design <span>↗</span></a>
+            <a class="catalogue-button" href="https://wa.me/923219225746?text=Assalamualaikum%20Qazi%20M.%20Ashraf%2C%20I%20am%20enquiring%20about%20the%20Royal%20Blue%20Cushion%20Bedroom%20Set%20(Design%2003)%20from%20the%20AMR.QAZI%20Furniture%20website.%20Please%20share%20its%20details%20and%20price.">WhatsApp Enquiry <span>↗</span></a>
+          </div>
         </div>
       </article>
     </div>
